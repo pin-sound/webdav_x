@@ -1,0 +1,189 @@
+{
+  "@@locale": "zh_TW",
+  "appTitle": "webdav_x",
+  "welcome": "歡迎使用",
+  "appSubtitle": "堅果雲 WebDAV 同步工具",
+  "uploadMode": "上傳目錄",
+  "uploadModeSubtitle": "選擇檔案並上傳到 WebDAV 資料夾",
+  "viewMode": "查看目錄",
+  "viewModeSubtitle": "瀏覽和管理 WebDAV 上的檔案",
+  "settings": "配置",
+  "showQrCode": "顯示配置二維碼",
+  "openDownloadFolder": "打開下載目錄",
+  "pleaseConfigureFirst": "請先配置 WebDAV 設定",
+  "error": "發生錯誤: {error}",
+  "@error": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "languageSettings": "語言設定",
+  "selectLanguage": "選擇語言",
+  "simplifiedChinese": "简体中文",
+  "traditionalChinese": "繁體中文",
+  "english": "English",
+  "downloadFolderPath": "檔案儲存在: /storage/emulated/0/Download/WebDAV_X\\n請使用檔案管理器查看",
+  "cannotOpenFolder": "無法打開資料夾",
+  
+  "settingsTitle": "配置",
+  "webdavConfiguration": "WebDAV 配置",
+  "account": "Account",
+  "accountHint": "輸入您的Account",
+  "password": "Password",
+  "passwordHint": "輸入您的Password",
+  "pleaseEnterAccountPassword": "請輸入Account和Password",
+  "accountMustBeEmail": "Account必須是有效的郵箱格式",
+  "connectionSuccess": "連接成功！",
+  "connectionFailed": "連接失敗，請檢查Account和Password",
+  "validationFailed": "驗證失敗: {error}",
+  "@validationFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSaved": "設定已儲存",
+  "configImported": "配置已導入，請驗證並儲存",
+  "scanQrCode": "掃描二維碼",
+  "validating": "驗證中...",
+  "validateConnection": "驗證連接",
+  "saveConfiguration": "儲存配置",
+  
+  "uploadDirectory": "上傳目錄",
+  "viewDirectory": "查看目錄",
+  "pathExists": "路徑已存在",
+  "cannotAccessFolder": "無法訪問或創建資料夾: {error}",
+  "@cannotAccessFolder": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "webdavPath": "WebDAV 路徑",
+  "folderNameHint": "輸入資料夾名稱",
+  "add": "添加",
+  "addNewPath": "添加新路徑",
+  "noPathsYet": "暫無路徑",
+  "pleaseAddPath": "請在上方添加 WebDAV 路徑",
+  "deleteTooltip": "刪除(不會影響到webdav網盤)",
+  
+  "uploadTo": "上傳到: {path}",
+  "@uploadTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "selectFiles": "選擇檔案",
+  "uploadAll": "上傳全部 ({count})",
+  "@uploadAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "clearList": "清空列表",
+  "readyToUpload": "準備上傳",
+  "clickToSelectFiles": "點擊上方按鈕選擇檔案",
+  "size": "大小: {size}",
+  "@size": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "errorMessage": "錯誤: {message}",
+  "@errorMessage": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "editFilename": "編輯檔案名",
+  "upload": "上傳",
+  "remove": "移除",
+  "filename": "檔案名",
+  "cancel": "取消",
+  "confirm": "確認",
+  "uploadFailed": "上傳失敗: {error}",
+  "@uploadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noFilesToUpload": "沒有待上傳的檔案",
+  
+  "browseDirectory": "瀏覽目錄: {path}",
+  "@browseDirectory": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "refresh": "刷新",
+  "loadFailed": "加載失敗",
+  "retry": "重試",
+  "folderEmpty": "資料夾為空",
+  "confirmDelete": "確認刪除",
+  "confirmDeleteFile": "確定要刪除 \\\"{name}\\\" 嗎？",
+  "@confirmDeleteFile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "刪除",
+  "deleteSuccess": "刪除成功",
+  "deleteFailed": "刪除失敗: {error}",
+  "@deleteFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cannotGetDownloadDir": "無法獲取下載目錄",
+  "downloadStarted": "開始下載: {name}",
+  "@downloadStarted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadSuccess": "下載成功: {path}",
+  "@downloadSuccess": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadFailed": "下載失敗: {error}",
+  "@downloadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "scanConfigQrCode": "掃描配置二維碼",
+  "placeQrInFrame": "將二維碼放入框內",
+  "autoRecognize": "自動識別並導入配置",
+  "qrCodeExpired": "二維碼已失效，請刷新後重試",
+  "qrCodeInvalid": "二維碼格式不正確或已損壞",
+  "cannotParseQrCode": "無法解析二維碼數據"
+}

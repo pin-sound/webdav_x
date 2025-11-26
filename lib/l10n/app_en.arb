@@ -1,0 +1,189 @@
+{
+  "@@locale": "en",
+  "appTitle": "webdav_x",
+  "welcome": "Welcome",
+  "appSubtitle": "Nutstore WebDAV Sync Tool",
+  "uploadMode": "Upload Files",
+  "uploadModeSubtitle": "Select files and upload to WebDAV folder",
+  "viewMode": "View Files",
+  "viewModeSubtitle": "Browse and manage files on WebDAV",
+  "settings": "Settings",
+  "showQrCode": "Show Configuration QR Code",
+  "openDownloadFolder": "Open Download Folder",
+  "pleaseConfigureFirst": "Please configure WebDAV settings first",
+  "error": "Error: {error}",
+  "@error": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "languageSettings": "Language Settings",
+  "selectLanguage": "Select Language",
+  "simplifiedChinese": "简体中文",
+  "traditionalChinese": "繁體中文",
+  "english": "English",
+  "downloadFolderPath": "Files saved at: /storage/emulated/0/Download/WebDAV_X\\nPlease use file manager to view",
+  "cannotOpenFolder": "Cannot open folder",
+  
+  "settingsTitle": "Settings",
+  "webdavConfiguration": "WebDAV Configuration",
+  "account": "Account",
+  "accountHint": "Enter your Account",
+  "password": "Password",
+  "passwordHint": "Enter your Password",
+  "pleaseEnterAccountPassword": "Please enter Account and Password",
+  "accountMustBeEmail": "Account must be a valid email format",
+  "connectionSuccess": "Connection successful!",
+  "connectionFailed": "Connection failed, please check Account and Password",
+  "validationFailed": "Validation failed: {error}",
+  "@validationFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSaved": "Settings saved",
+  "configImported": "Configuration imported, please validate and save",
+  "scanQrCode": "Scan QR Code",
+  "validating": "Validating...",
+  "validateConnection": "Validate Connection",
+  "saveConfiguration": "Save Configuration",
+  
+  "uploadDirectory": "Upload Directory",
+  "viewDirectory": "View Directory",
+  "pathExists": "Path already exists",
+  "cannotAccessFolder": "Cannot access or create folder: {error}",
+  "@cannotAccessFolder": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "webdavPath": "WebDAV Path",
+  "folderNameHint": "Enter folder name",
+  "add": "Add",
+  "addNewPath": "Add New Path",
+  "noPathsYet": "No paths yet",
+  "pleaseAddPath": "Please add WebDAV path above",
+  "deleteTooltip": "Delete (won't affect webdav cloud storage)",
+  
+  "uploadTo": "Upload to: {path}",
+  "@uploadTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "selectFiles": "Select Files",
+  "uploadAll": "Upload All ({count})",
+  "@uploadAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "clearList": "Clear List",
+  "readyToUpload": "Ready to Upload",
+  "clickToSelectFiles": "Click the button above to select files",
+  "size": "Size: {size}",
+  "@size": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "errorMessage": "Error: {message}",
+  "@errorMessage": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "editFilename": "Edit Filename",
+  "upload": "Upload",
+  "remove": "Remove",
+  "filename": "Filename",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "uploadFailed": "Upload failed: {error}",
+  "@uploadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noFilesToUpload": "No files to upload",
+  
+  "browseDirectory": "Browse directory: {path}",
+  "@browseDirectory": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "refresh": "Refresh",
+  "loadFailed": "Load failed",
+  "retry": "Retry",
+  "folderEmpty": "Folder is empty",
+  "confirmDelete": "Confirm Delete",
+  "confirmDeleteFile": "Are you sure you want to delete \\\"{name}\\\"?",
+  "@confirmDeleteFile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "Delete",
+  "deleteSuccess": "Delete successful",
+  "deleteFailed": "Delete failed: {error}",
+  "@deleteFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cannotGetDownloadDir": "Cannot get download directory",
+  "downloadStarted": "Download started: {name}",
+  "@downloadStarted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadSuccess": "Download successful: {path}",
+  "@downloadSuccess": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadFailed": "Download failed: {error}",
+  "@downloadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "scanConfigQrCode": "Scan Configuration QR Code",
+  "placeQrInFrame": "Place QR code in frame",
+  "autoRecognize": "Auto-recognize and import configuration",
+  "qrCodeExpired": "QR code has expired, please refresh and try again",
+  "qrCodeInvalid": "QR code format is incorrect or damaged",
+  "cannotParseQrCode": "Cannot parse QR code data"
+}
