@@ -339,9 +339,12 @@ class _MenuScreenState extends State<MenuScreen> {
                 value: 'about',
                 child: ListTile(
                   leading: const Icon(Icons.info_outline_rounded),
-                  title: const Text('关于作者'),
+                  title: const Text('关于'),
                   contentPadding: EdgeInsets.zero,
                   dense: true,
+                  onTap: () {
+                    openUrl('https://github.com/KineticSketch');
+                  },
                 ),
               ),
               if (_isConfigured) ...[

@@ -10,7 +10,7 @@ generate-i18n:
 	
 generate-name:
 	@echo "生成应用名"
-	dart run launcher_name:main
+	dart run names_launcher:change
 	
 # ---------------------------------------------------------------------
 build-apk:

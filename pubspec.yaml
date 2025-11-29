@@ -31,7 +31,6 @@ dependencies:
   animations: ^2.1.1
   encrypt: ^5.0.3
   url_launcher: ^6.3.2
-  launcher_name: ^1.0.2
   pointycastle: ^3.9.1
   open_file_manager: ^2.0.1
   flutter_background_service: ^5.1.0
@@ -44,6 +43,7 @@ dev_dependencies:
 
   flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.14.4
+  names_launcher: ^0.0.2 
 
 flutter:
   uses-material-design: true
@@ -52,5 +52,13 @@ flutter:
   assets:
     - assets/icon/
 
-launcher_name:
-  default: "WebDav X"
+names_launcher:
+  name:
+    default: "WebDav X"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+    windows:
+      enable: false
