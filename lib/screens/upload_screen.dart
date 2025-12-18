@@ -29,6 +29,7 @@ class _UploadScreenState extends State<UploadScreen> {
   bool _isInitialized = false;
 
   bool _encryptUpload = false;
+  bool _useTimestamp = true;
 
   @override
   void initState() {
@@ -100,7 +101,9 @@ class _UploadScreenState extends State<UploadScreen> {
 
     try {
       // var uploadPath = file.path; // Unused
-      var uploadName = FileRenamer.renameWithTimestamp(file.name);
+      var uploadName = _useTimestamp
+          ? FileRenamer.renameWithTimestamp(file.name)
+          : file.name;
 
       if (_encryptUpload) {
         uploadName += '.enc';
@@ -436,6 +439,37 @@ class _UploadScreenState extends State<UploadScreen> {
                                 onChanged: (value) {
                                   setState(() {
                                     _encryptUpload = value;
+                                  });
+                                },
+                                activeThumbColor: Colors.blue,
+                              ),
+                            ],
+                          ),
+                          const Divider(height: 16),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.history_rounded,
+                                size: 16,
+                                color: _useTimestamp
+                                    ? Colors.blue
+                                    : Colors.grey[600],
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                '使用时间戳重命名',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey[800],
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              const Spacer(),
+                              Switch(
+                                value: _useTimestamp,
+                                onChanged: (value) {
+                                  setState(() {
+                                    _useTimestamp = value;
                                   });
                                 },
                                 activeThumbColor: Colors.blue,

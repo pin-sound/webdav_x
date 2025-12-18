@@ -43,23 +43,39 @@ class WebDavService {
   bool get isInitialized => _client != null;
 
   /// Ensure a directory exists, create if not
-  Future<void> ensureDirectory(String path) async {
+  Future<void> _ensureDirectoryRecursive(String path) async {
     if (_client == null) {
       throw Exception('WebDAV client not initialized');
     }
 
-    try {
-      // Try to read the directory to check if it exists
-      await _client!.readDir('/$path');
-    } catch (e) {
-      // If read fails (likely 404), try to create it
+    final parts = path.split('/').where((s) => s.isNotEmpty).toList();
+    var currentPath = '';
+
+    for (final part in parts) {
+      currentPath = currentPath.isEmpty ? part : '$currentPath/$part';
       try {
-        await _client!.mkdir('/$path');
+        // Try to read the directory to check if it exists
+        await _client!.readDir('/$currentPath');
       } catch (e) {
-        // If mkdir fails, rethrow
-        throw Exception('Failed to create directory: $e');
+        // If read fails (likely 404), try to create it
+        try {
+          await _client!.mkdir('/$currentPath');
+        } catch (e) {
+          // If mkdir fails and it's not because it already exists, rethrow
+          // (Some servers might return error if it exists but readDir failed for other reasons)
+          // But usually 404 is what we expect here.
+          if (!e.toString().contains('405')) {
+            // 405 Method Not Allowed often means it exists
+            throw Exception('Failed to create directory $currentPath: $e');
+          }
+        }
       }
     }
+  }
+
+  /// Ensure a directory exists, create if not
+  Future<void> ensureDirectory(String path) async {
+    await _ensureDirectoryRecursive(path);
   }
 
   /// List files in a directory

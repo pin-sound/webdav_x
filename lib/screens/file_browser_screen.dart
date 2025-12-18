@@ -66,7 +66,10 @@ class _FileBrowserScreenState extends State<FileBrowserScreen> {
     });
 
     try {
-      final files = await _webdavService.listFiles('.');
+      final allItems = await _webdavService.listFiles('.');
+
+      // Filter to only include files (not directories)
+      final files = allItems.where((item) => item.isDir != true).toList();
 
       // Sort by modification time (newest first)
       files.sort((a, b) {
